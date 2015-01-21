@@ -4,7 +4,7 @@ $time-transition-lasting: 600ms;
 
 body.frontpage {
 
-    background: url('/img/cover-2014-winter.jpg') center / cover fixed;
+    background: url('/media/cover-2014-winter.jpg') center / cover fixed;
 }
 
 section.frontpage.links {
@@ -37,7 +37,9 @@ section.frontpage.links {
             display: flex;
             justify-content: center;
             height: 0; // seriously? in 2015?
+            display: block;
             padding: 1% 0 19%;
+            background-color: cyan;
         }
 
         a.link {
