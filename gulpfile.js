@@ -8,7 +8,7 @@ var livereload    = require('gulp-livereload');
 var sourcemaps    = require('gulp-sourcemaps');
 var sass          = require('gulp-sass');
 var postcss       = require('gulp-postcss');
-var autoprefixer  = require('autoprefixer-core');
+var autoprefixer  = require('autoprefixer');
 var pixrem        = require('pixrem');
 var csswring      = require('csswring');
 var watch         = require('gulp-watch');
@@ -46,14 +46,14 @@ gulp.task('watch', [ 'build-dev' ], function () {
 });
 
 
-gulp.task('clean-css', function (cb) {
+gulp.task('clean-css', function () {
 
-    del([ './css/*' ], cb);
+    return del([ './css/*' ]);
 });
 
-gulp.task('clean-php', function (cb) {
+gulp.task('clean-php', function () {
 
-    del([ './*.php' ], cb);
+    return del([ './*.php' ]);
 });
 
 
